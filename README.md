@@ -1,3 +1,5 @@
+<pre>
+ 
  --------------
 | EXERCICIO 01 |
  --------------
@@ -219,3 +221,5 @@ nothing added to commit but untracked files present (use "git add" to track)
 On branch main
 nothing to commit, working tree clean
 @ViNascLab ➜ /workspaces/codespaces-blank/exercicio01 (main) $ 
+
+</pre>
