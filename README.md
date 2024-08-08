@@ -31,6 +31,8 @@ RA 1802295
      
 <b>D) Sobrescrever o conteúdo do arquivo.txt: echo 02 > arquivo.txt</b>
   @ViNascLab ➜ /workspaces/codespaces-blank/exercicio01 (main) $ echo 02 > arquivo.txt
+
+     
 <b>E) Verificar o diffing no arquivo</b>
   @ViNascLab ➜ /workspaces/codespaces-blank/exercicio01 (main) $ git diff
   diff --git a/arquivo.txt b/arquivo.txt
