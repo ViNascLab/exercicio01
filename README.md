@@ -9,7 +9,9 @@ RA 1802295
 
 <b>A) No working dir, executar o comando: echo 01 > arquivo.txt</b>
     @ViNascLab ➜ /workspaces/codespaces-blank/exercicio01 (main) $ echo 01 > arquivo.txt
-<b>B) Adicionar o arquivo no staging e conferir o status
+
+ 
+<b>B) Adicionar o arquivo no staging e conferir o status</b>
   @ViNascLab ➜ /workspaces/codespaces-blank/exercicio01 (main) $ git add arquivo.txt 
   @ViNascLab ➜ /workspaces/codespaces-blank/exercicio01 (main) $ git status
   On branch main
@@ -19,11 +21,14 @@ RA 1802295
   Changes to be committed:
     (use "git rm --cached <file>..." to unstage)
           new file:   arquivo.txt
+     
 <b>C) Commitar o arquivo do staging com a descrição "git add example - arquivo.txt“</b>
   @ViNascLab ➜ /workspaces/codespaces-blank/exercicio01 (main) $ git commit -m "git add example - arquivo.txt"
   [main (root-commit) 440eaf9] git add example - arquivo.txt
    1 file changed, 1 insertion(+)
    create mode 100644 arquivo.txt
+
+     
 <b>D) Sobrescrever o conteúdo do arquivo.txt: echo 02 > arquivo.txt</b>
   @ViNascLab ➜ /workspaces/codespaces-blank/exercicio01 (main) $ echo 02 > arquivo.txt
 <b>E) Verificar o diffing no arquivo</b>
@@ -35,6 +40,8 @@ RA 1802295
   @@ -1 +1 @@
   -01
   +02
+
+     
 <b>F) Adicionar novamente o arquivo no staging e conferir o status</b>
   @ViNascLab ➜ /workspaces/codespaces-blank/exercicio01 (main) $ git add arquivo.txt 
   @ViNascLab ➜ /workspaces/codespaces-blank/exercicio01 (main) $ git status
@@ -42,10 +49,16 @@ RA 1802295
   Changes to be committed:
     (use "git restore --staged <file>..." to unstage)
           modified:   arquivo.txt
+
+     
 <b>G) Verificar o diffing no arquivo</b>
   @ViNascLab ➜ /workspaces/codespaces-blank/exercicio01 (main) $ git diff arquivo.txt
+
+     
 <b>H) Sobrescrever o conteúdo do arquivo.txt: echo 03 > arquivo.txt</b>
   @ViNascLab ➜ /workspaces/codespaces-blank/exercicio01 (main) $ echo 03 > arquivo.txt
+
+     
 <b>I) Verificar o diffing no arquivo</b>
   @ViNascLab ➜ /workspaces/codespaces-blank/exercicio01 (main) $ git diff arquivo.txt
     diff --git a/arquivo.txt b/arquivo.txt
@@ -55,6 +68,8 @@ RA 1802295
     @@ -1 +1 @@
     -02
     +03
+
+     
 <b>J) Fazer o restore do arquivo da área de staging e verificar o status</b>
   @ViNascLab ➜ /workspaces/codespaces-blank/exercicio01 (main) $ git restore --staged arquivo.txt
   @ViNascLab ➜ /workspaces/codespaces-blank/exercicio01 (main) $ git status
@@ -65,11 +80,15 @@ Changes not staged for commit:
         modified:   arquivo.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
+
+   
 <b>K) Realizar o commit do arquivo e verificar o log</b>
 @ViNascLab ➜ /workspaces/codespaces-blank/exercicio01 (main) $ git add arquivo.txt 
 @ViNascLab ➜ /workspaces/codespaces-blank/exercicio01 (main) $ git commit -m arquivo.txt 
 [main 5437956] arquivo.txt
  1 file changed, 1 insertion(+), 1 deletion(-)
+
+   
 <b>L) Adicionar um arquivo gitignore com o seguinte conteúdo: *.txt</b>
 @ViNascLab ➜ /workspaces/codespaces-blank/exercicio01 (main) $ vi .gitignore
 @ViNascLab ➜ /workspaces/codespaces-blank/exercicio01 (main) $ git status
@@ -92,8 +111,9 @@ nothing added to commit but untracked files present (use "git add" to track)
  1 file changed, 1 insertion(+)
  create mode 100644 .gitignore
 
-@ViNascLab ➜ /workspaces/codespaces-blank/exercicio01 (main) $ 
 
+
+   
 <b>M) Criar um arquivo novo.txt e verificar o status</b>
 @ViNascLab ➜ /workspaces/codespaces-blank/exercicio01 (main) $ echo > novo.txt
 @ViNascLab ➜ /workspaces/codespaces-blank/exercicio01 (main) $ git status
